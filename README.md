@@ -27,4 +27,4 @@ The generated scanpaths are saved in the **results** folder.
 
 We provide images and semantic features for the OSIE dataset which can be downloaded from [here](#). The semantic features are extracted using the [code and pre-trained models](https://github.com/ronghanghu/seg_every_thing), you can use the code to extract semantic features of other images.
 
-# Code coming soon ...
+# Code will be released after I return to work
