@@ -9,7 +9,7 @@ There are four major components presented in the model: an image feature extract
 
 ## Run the code
 
-To run the code, you need to download the pre-trained models from [here](#) and extract the files to the **data** folder in the root directory.
+To run the code, you need to download the pre-trained models from [here](https://mega.nz/file/KvxEXS5Z#p-ZxpjiJ6k9Tj9vxH8CGX0Ec9MQW0SJX_XSeEJcmvW0) and extract the files to the **data** folder in the root directory.
 
 	# get the source code
 	git clone https://github.com/sunwj/scanpath.git
@@ -25,6 +25,6 @@ The generated scanpaths are saved in the **results** folder.
 ## Sample results
 ![](figs/sample_results.jpg)
 
-We provide images and semantic features for the OSIE dataset which can be downloaded from [here](#). The semantic features are extracted using the [code and pre-trained models](https://github.com/ronghanghu/seg_every_thing), you can use the code to extract semantic features of other images.
+We provide images and semantic features for the OSIE dataset which can be downloaded from [here](https://mega.nz/file/CjgE0QQL#rs_i7Dy1BB4b-s8kGrejAG7A-DdFbNfVoZz27RM-cXs). The semantic features are extracted using the [code and pre-trained models](https://github.com/ronghanghu/seg_every_thing), you can use the code to extract semantic features of other images.
 
 # Code will be released after I return to work
