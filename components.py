@@ -23,8 +23,10 @@ mdn = nn.Sequential(
 ).to(device)
 fix_duration = FixationDuration(512, 128).to(device)
 
-feature_extractor.load_state_dict(torch.load('./data/weights/vgg19.pth'))
-fuser.load_state_dict(torch.load('./data/weights/fuser.pth'))
-iorroi_lstm.load_state_dict(torch.load('./data/weights/iorroi.pth'))
-mdn.load_state_dict(torch.load('./data/weights/mdn.pth'))
-fix_duration.load_state_dict(torch.load('./data/weights/fix_duration.pth'))
+location_mapper = None if torch.cuda.is_available() else device
+
+feature_extractor.load_state_dict(torch.load('./data/weights/vgg19.pth', map_location=location_mapper))
+fuser.load_state_dict(torch.load('./data/weights/fuser.pth', map_location=location_mapper))
+iorroi_lstm.load_state_dict(torch.load('./data/weights/iorroi.pth', map_location=location_mapper))
+mdn.load_state_dict(torch.load('./data/weights/mdn.pth', map_location=location_mapper))
+fix_duration.load_state_dict(torch.load('./data/weights/fix_duration.pth', map_location=location_mapper))
