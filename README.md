@@ -18,7 +18,7 @@ To run the code, you need to download the pre-trained models from [here](https:/
 	python3 eval.py -i image_file -s semantic_file
 	
 	# example
-	python3 eval.py -i ./sample_images/img1.jpg -s ./sample_images/img1.npy
+	python3 eval.py -i ./sample_images/img1.jpg -s ./sample_images/sem1.npy
 
 The generated scanpaths are saved in the **results** folder.
 
